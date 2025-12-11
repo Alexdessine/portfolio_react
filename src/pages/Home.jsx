@@ -1,8 +1,17 @@
 import React from "react";
 import AboutBlock, {SkillsBlock} from "../components/home/AboutSkillsSection";
+import HeroBlock from "../components/home/Hero";
 import aboutImage from "../assets/images/john-doe-about.jpg";
+import heroImage from "../assets/images/hero-bg.jpg";
 
 function Home() {
+
+    const heroData = {
+        title: "Bonjour je suis John Doe !",
+        image: heroImage,
+        subtitle: "Développeur Web Full Stack",
+    };
+
     const aboutData = {
         title: "A propos",
         image: aboutImage,
@@ -23,6 +32,13 @@ function Home() {
 
     return (
         <main>
+            <div>
+                <HeroBlock 
+                    title={heroData.title}
+                    image={heroData.image}
+                    subtitle={heroData.subtitle}
+                />
+            </div>
             <div class="row mb-4 mt-4">
                 <div class="col-sm-12 col-md-8 m-auto mb-3 mb-sm-0">
                     <div class="card">
