@@ -54,7 +54,7 @@
 .service-card:hover{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     transition: all .3s ease-in-out;
-    background-color: rgb(245, 245, 245);
+    background-color: #efefef;
 }
 
 .service-card i{
@@ -70,6 +70,20 @@
 .service-card p{
     text-align: center;
     font-size: small;
+}
+
+.project-card{
+    transition: all .3s ease-in-out;
+}
+
+.project-card:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease-in-out;
+    background-color: #efefef;
+}
+
+.project-card a:hover{
+    background-color: #3586ff;
 }
 
 /* Pour l'affichage mobile */

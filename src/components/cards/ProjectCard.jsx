@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectBlock({title, image, paragraph, realize, link}) {
     return (
-        <div class="card">
+        <div class="card project-card">
             <img src={image} class="card-img-top" alt={title} />
             <div class="card-body text-center">
                 <h5 class="card-title fs-3 fw-bold">{title}</h5>
