@@ -1,0 +1,23 @@
+.nav-item a{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+}
+
+.nav-item a.active-link{
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
+
+.logo{
+    color: white;
+}
+
+.navbar .flex-end{
+    display: flex;
+    justify-content: flex-end ;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+}
