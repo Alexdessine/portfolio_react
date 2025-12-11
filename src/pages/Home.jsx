@@ -41,7 +41,7 @@ function Home() {
             </div>
             <div class="row mb-4 mt-4">
                 <div class="col-sm-12 col-md-8 m-auto mb-3 mb-sm-0">
-                    <div class="card">
+                    <div class="card about-skills-card">
                         <div class="card-body col-md-6">
                             <AboutBlock 
                                 title={aboutData.title}
