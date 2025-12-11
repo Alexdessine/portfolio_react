@@ -5,6 +5,7 @@ import './index.css';
 import './styles/header.css';
 import './styles/footer.css';
 import './styles/home.css';
+import './styles/cards.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
