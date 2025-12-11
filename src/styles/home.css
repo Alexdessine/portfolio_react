@@ -24,13 +24,13 @@ h2{
     font-weight: bold;
 }
 
-.card{
+.about-skills-card{
     display: flex;
     flex-direction: row;
     transition: all .3s ease-in-out;
 }
 
-.card:hover{
+.about-skills-card:hover{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     transition: all .3s ease-in-out;
     background-color: rgb(245, 245, 245);

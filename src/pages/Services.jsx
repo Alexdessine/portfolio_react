@@ -1,8 +1,16 @@
 import React from "react";
 
 import ServiceBlock from "../components/cards/ServiceCard";
+import TitleBlock from "../components/title/Title";
+import titleImage from "../assets/images/banner.jpg";
 
 function Services() {
+    const pageTitle = {
+        image: titleImage,
+        title: "Mon offre de services",
+        paragraph: "Voir les prestations sur lesquelles je peux intervenir."
+    };
+
     const servicesData = [
         {
             title: "UX Design",
@@ -23,6 +31,13 @@ function Services() {
 
     return (
         <main>
+            <section className="container-fluid p-0 ">
+                <TitleBlock
+                    image={pageTitle.image} 
+                    title={pageTitle.title}
+                    paragraph={pageTitle.paragraph}
+                />
+            </section>
             <section className="container my-5">
                 <article className="row g-4">
                     {servicesData.map((service, index) => (
