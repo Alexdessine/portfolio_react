@@ -21,6 +21,10 @@ img{
     width: 100%;
 }
 
+span{
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 720px) {
     .card{
         flex-direction: column;

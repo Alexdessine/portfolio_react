@@ -34,7 +34,7 @@ function Home() {
                                 />
                         </div>
                         <div class="card-body col-md-6">
-                            <SkillsBlock title="Compétences" skills={skillsData} />
+                            <SkillsBlock title="Mes compétences" skills={skillsData} />
                         </div>
                     </div>
                 </div>
