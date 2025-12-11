@@ -1,5 +1,38 @@
 footer{
+    padding-top: 1.5em;
     display: flex;
     justify-content: space-around;
+    color: white;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+address{
+    display: flex;
+    flex-direction: column;
+}
+address a{
+    color: white;
+    text-decoration: none;
+}
+
+address a:hover{
+    text-decoration: underline;
+    opacity: .8;
+}
+
+.social-link{
+    display: flex;
+    gap: .5em;
+    font-size: 1.5em;
+}
+
+.social-link a{
+    color: rgb(181, 181, 181);
+}
+
+.social-link a:hover{
     color: white;
 }
