@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect, useState} from "react";
 import AboutBlock, {SkillsBlock} from "../components/home/AboutSkillsSection";
+import GithubModal from "../components/home/GithubModal";
 import HeroBlock from "../components/home/Hero";
 import aboutImage from "../assets/images/john-doe-about.jpg";
 import heroImage from "../assets/images/hero-bg.jpg";
 
 function Home() {
+    const [showModal, setShowModal] = useState(false);
+    const [githubData, setGithubData] = useState(null);
+
+    // Chargement des infos Github une seule fois
+    useEffect(() => {
+        fetch("https://api.github.com/users/Alexdessine")
+            .then(response => response.json())
+            .then(data => setGithubData(data))
+            .catch(error => console.error(error));
+    }, []);
 
     const heroData = {
         title: "Bonjour je suis John Doe !",
@@ -37,6 +48,13 @@ function Home() {
                     title={heroData.title}
                     image={heroData.image}
                     subtitle={heroData.subtitle}
+                    onOpenModal={() => setShowModal(true)}
+                />
+
+                <GithubModal
+                    show={showModal}
+                    onClose={() => setShowModal(false)}
+                    data={githubData}
                 />
             </div>
             <div class="row mb-4 mt-4">
