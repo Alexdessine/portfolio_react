@@ -7,9 +7,6 @@ function GithubModal({ data }) {
 
     return (
         <>
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                En savoir plus
-            </button>
 
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-theme="dark">
                 <div className="modal-dialog bg-body-tertiary" >
