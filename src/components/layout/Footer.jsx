@@ -32,11 +32,11 @@ function Footer() {
             <section>
                 <p>Mes dernières réalisations</p>
                 <ul>
-                    <li><NavLink to="/realisations">FreshFood</NavLink></li>
-                    <li><NavLink to="/realisations">Restaurant Akira</NavLink></li>
-                    <li><NavLink to="/realisations">Espace bien-être</NavLink></li>
-                    <li><NavLink to="/realisations">SEO</NavLink></li>
-                    <li><NavLink to="/realisations">Création d'une API</NavLink></li>
+                    <li><a href="https://billard-score.fr" target="_blanck" rel="noopener noreferrer">Billard Score</a></li>
+                    <li><a href="https://bcj37.fr" target="_blanck" rel="noopener noreferrer">BCJ37</a></li>
+                    <li><a href="https://cv.alexandrebourlier.fr" target="_blanck" rel="noopener noreferrer">CV en ligne</a></li>
+                    <li><a href="https://quizz.alexandrebourlier.fr" target="_blanck" rel="noopener noreferrer">Quizz</a></li>
+                    <li><a href="https://alexdessine.fr" target="_blanck" rel="noopener noreferrer">AlexDessine</a></li>
                     <li><NavLink to="/realisations">Maquette d'un site web</NavLink></li>
                 </ul>
             </section>
