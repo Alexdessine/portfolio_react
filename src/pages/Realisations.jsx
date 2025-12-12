@@ -4,12 +4,12 @@ import ProjectBlock from "../components/cards/ProjectCard";
 import TitleBlock from "../components/title/Title";
 import titleImage from "../assets/images/banner.jpg";
 
-import image1 from "../assets/images/portfolio/coder.jpg";
-import image2 from "../assets/images/portfolio/espace-bien-etre.jpg";
-import image3 from "../assets/images/portfolio/fresh-food.jpg";
-import image4 from "../assets/images/portfolio/restaurant-japonais.jpg";
+import image1 from "../assets/images/portfolio/site_internet.jpg";
+import image2 from "../assets/images/portfolio/cv.jpg";
+import image3 from "../assets/images/portfolio/billard-score.jpg";
+import image4 from "../assets/images/portfolio/bcj.jpg";
 import image5 from "../assets/images/portfolio/screens.jpg";
-import image6 from "../assets/images/portfolio/seo.jpg";
+import image6 from "../assets/images/portfolio/quizz.jpg";
 
 function Realisations() {
     const pageTitle = {
@@ -20,45 +20,45 @@ function Realisations() {
 
     const projectsData = [
         {
-            title: "Fresh Food",
+            title: "Billard Score",
             image: image3,
-            paragraph: "Site de vente de produits frais en ligne",
-            link: "https://fresh-food.example.com",
+            paragraph: "Site d'enregistrement et de suivi de parties de billard",
+            link: "https://billard-score.fr",
             realize: "Site réalisé avec PHP et MySQL"
         },
         {
-            title: "Restaurant Akira",
+            title: "BCJ37",
             image: image4,
-            paragraph: "Site de vente de produits frais en ligne",
-            link: "https://restaurant-akira.example.com",
-            realize: "Site réalisé avec WordPress"
+            paragraph: "Site du club de billard de Joué-lès-Tours",
+            link: "https://bcj37.fr",
+            realize: "Site réalisé avec Laravel"
         },
         {
-            title: "Espace bien-être",
+            title: "CV en ligne",
             image: image2,
-            paragraph: "Site de vente de produits frais en ligne",
-            link: "https://espace-bien-etre.example.com",
-            realize: "Site réalisé avec LARAVEL"
+            paragraph: "Cv en ligne",
+            link: "https://cv.alexandrebourlier.fr",
+            realize: "Site réalisé avec HTML et CSS"
         },
         {
-            title: "SEO",
+            title: "Quizz",
             image: image6,
-            paragraph: "Amélioration du référencement d'un site e-commerce",
-            link: "https://seo.example.com",
-            realize: "utilisation des outils SEO"
+            paragraph: "Site de Quizz en ligne",
+            link: "https://quizz.alexandrebourlier.fr",
+            realize: "Site réalisé avec PHP et MySQL"
         },
         {
-            title: "Création d'une API",
+            title: "AlexDessine",
             image: image1,
-            paragraph: "Création d'une API RESTFULL publique",
-            link: "https://seo.example.com",
+            paragraph: "Site de création artistique",
+            link: "https://alexdessine.fr",
             realize: "PHP - SYMFONY"
         },
         {
             title: "Maquette d'un site web",
             image: image5,
             paragraph: "Création d'un prototype d'un site",
-            link: "https://seo.example.com",
+            link: "/realisations",
             realize: "Réaliser avec FIGMA"
         },
 
@@ -82,6 +82,7 @@ function Realisations() {
                                 image={projet.image}
                                 paragraph={projet.paragraph}
                                 realize={projet.realize}
+                                link={projet.link}
                             />
                         </div>
                     ))}
