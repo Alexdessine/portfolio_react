@@ -1,14 +1,15 @@
 import React from "react";
+import SectionCard from "../ui/SectionCard";
 
 function AboutBlock({title, image, paragraphs}) {
     return (
-        <div className="about-skills-block">
-            <h3>{title}</h3>
-            <img src={image} alt={title} className="mb-4"/>
+        <SectionCard title={title}>
+            {image && <img src={image} alt={title} className="mb-4" />}
             {paragraphs.map((para, index) => (
                 <p key={index}>{para}</p>
             ))}
-        </div>
+        </SectionCard>
+
     )
 }
 
@@ -41,9 +42,8 @@ export { SkillBar };
 
 function SkillsBlock ({title, skills}){
     return (
-        <div className="about-skills-block">
-            <h3>{title}</h3>
-                {skills.map((skill, index) => (
+        <SectionCard title={title}>
+            {skills.map((skill, index) => (
                     <SkillBar 
                         key={index} 
                         label={skill.label}
@@ -51,7 +51,7 @@ function SkillsBlock ({title, skills}){
                         color={skill.color}>
                     </SkillBar>
                 ))}
-        </div>
+        </SectionCard>
     )
 }
 

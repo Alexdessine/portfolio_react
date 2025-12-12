@@ -10,3 +10,5 @@ function SectionCard({ title, children, className = ""}) {
         </div>
     );
 }
+
+export default SectionCard;
