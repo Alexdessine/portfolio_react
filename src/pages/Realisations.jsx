@@ -1,9 +1,13 @@
 import React from "react";
 
+// Composants réutilisables
 import ProjectBlock from "../components/cards/ProjectCard";
 import TitleBlock from "../components/title/Title";
+
+// Image du bandeau de page
 import titleImage from "../assets/images/banner.jpg";
 
+// Images des projets du portfolio
 import image1 from "../assets/images/portfolio/site_internet.jpg";
 import image2 from "../assets/images/portfolio/cv.jpg";
 import image3 from "../assets/images/portfolio/billard-score.jpg";
@@ -11,13 +15,30 @@ import image4 from "../assets/images/portfolio/bcj.jpg";
 import image5 from "../assets/images/portfolio/screens.jpg";
 import image6 from "../assets/images/portfolio/quizz.jpg";
 
+/**
+ * Page Réalisations / Portfolio
+ * - Présente une sélection de projets
+ * - Utilise des Cards Bootstrap via un composant réutilisable
+ * - Les projets sont générés dynamiquement à partir d'un tableau de données
+ */
 function Realisations() {
+
+    // Données du titre de page (bandeau)
     const pageTitle = {
         image: titleImage,
         title: "Portfolio",
         paragraph: "Voici quelques-une de mes réalisations."
     };
 
+    /**
+     * Liste des projets du portfolio
+     * Chaque objet représente un projet : 
+     * - titre
+     * - image illustrative
+     * - description courte
+     * - lien vers le site ou la réalisation
+     * - technologies utilisées
+     */
     const projectsData = [
         {
             title: "Billard Score",
@@ -66,6 +87,7 @@ function Realisations() {
 
     return (
         <main>
+            {/* Bandeau de titre de la page Portfolio */}
             <section className="container-fluid p-0 ">
                 <TitleBlock
                     image={pageTitle.image}
@@ -73,8 +95,11 @@ function Realisations() {
                     paragraph={pageTitle.paragraph}
                 />
             </section>
+
+            {/* Grilles des projets */}
             <section className="container my-5">
                 <article className="row g-4">
+                    {/* génération dynamique des cartes projets */}
                     {projectsData.map((projet, index) => (
                         <div className="col-md-4" key={index}>
                             <ProjectBlock

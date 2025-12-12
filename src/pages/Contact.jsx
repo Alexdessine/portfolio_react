@@ -1,16 +1,31 @@
 import React from "react";
+
+// Composant de la page Contact
 import ContactForm from "../components/contact/ContactForm";
 import InfoBlock from "../components/contact/ContactInfo";
 import SectionCard from "../components/ui/SectionCard";
 import TitleBlock from "../components/title/Title";
 
-
+/**
+ * Page Contact
+ * - Affiche un titre de page
+ * - Présente un formulaire de contact
+ * - Affiche les coordonnées et une carte Google maps 
+ */
 function Contact() {
+
+    // Données du titre de page
     const pageTitle = {
         title: "Contact",
         paragraph: "Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact."
     };
 
+    /**
+     * Données de contact
+     * - Informations textuelles
+     * - Adresse structurée avec la balise <adresse>
+     * - Carte Google Maps intégrée
+     */
     const infoContact = {
         title: "Mes Coordonnées",
         paragraphs: [
@@ -38,20 +53,17 @@ function Contact() {
     return (
         <main>
             <section>
+                {/* Titre de la page Contact */}
                 <TitleBlock
                     title={pageTitle.title}
                     paragraph={pageTitle.paragraph}
                 />
             </section>
+
+            {/* Section formulaire + information de contact */}
             <section>
                 <div className="container my-5">
                     <div className="row g-4">
-                        {/* <div className="col-md-6">
-                            <SectionCard title="Formulaire de contact">
-                                <ContactForm />
-                            </SectionCard>
-                        </div> */}
-
                         <div class="row mb-4 mt-4">
                             <div class="col-sm-12 col-md-10 m-auto mb-3 mb-sm-0">
                                 <div class="card about-skills-card">
@@ -59,12 +71,10 @@ function Contact() {
                                         <ContactForm />
                                     </div>
                                     <div class="card-body col-md-6">
-                                        {/* <ContactInfo title="Mes coordonnées"> */}
                                            <InfoBlock
                                             title={infoContact.title}
                                             paragraphs={infoContact.paragraphs}
                                            /> 
-                                        {/* </ContactInfo> */}
                                     </div>
                                 </div>
                             </div>

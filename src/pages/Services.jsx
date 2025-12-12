@@ -1,16 +1,35 @@
 import React from "react";
 
+// Composants réutilisables
 import ServiceBlock from "../components/cards/ServiceCard";
 import TitleBlock from "../components/title/Title";
+
+// Image du bandeau de la page
 import titleImage from "../assets/images/banner.jpg";
 
+
+/**
+ * Pages Services
+ * - Présente les différentes prestations proposées
+ * - Utilise des Cards Bootstraps via un composant réutilisable
+ * - Les services sont générés dynamiquement à partir d'un tableau de données
+ */
 function Services() {
+
+    // Données du titre de page (bandeau)
     const pageTitle = {
         image: titleImage,
         title: "Mon offre de services",
         paragraph: "Voir les prestations sur lesquelles je peux intervenir."
     };
 
+    /**
+     * Liste des services proposés
+     * Chaque objet représente un service
+     * - titre du service
+     * - icone Bootstrap associée
+     * - description détaillée
+     */
     const servicesData = [
         {
             title: "UX Design",
@@ -31,6 +50,7 @@ function Services() {
 
     return (
         <main>
+            {/* Bandeau de titre de la page Services */}
             <section className="container-fluid p-0 ">
                 <TitleBlock
                     image={pageTitle.image} 
@@ -38,8 +58,11 @@ function Services() {
                     paragraph={pageTitle.paragraph}
                 />
             </section>
+
+            {/* Liste des services sous formes de cartes */}
             <section className="container my-5">
                 <article className="row g-4">
+                    {/* Génération dynamique des cartes services */}
                     {servicesData.map((service, index) => (
                         <div className="col-md-4" key={index}>
                             <ServiceBlock 
