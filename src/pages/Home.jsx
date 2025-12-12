@@ -27,18 +27,17 @@ function Home() {
         title: "A propos",
         image: aboutImage,
         paragraphs: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            " Amoureux de technologie et curieux de tout j'aime découvrir de nouvelles technologies, le DIY à une grande place dans ma vie",
+            "C'est grâce à cette curiosité que je me suis intéressé au développement web, me formant principalement en autodidacte et par mon travail au sein de mon entreprise.",
         ],
     };
 
     const skillsData = [
-        {label: "HTML", value:90, color:"Danger"},
-        {label: "CSS", value:80, color:"Primary"},
-        {label: "JavaScript", value:70, color:"Warning"},
-        {label: "PHP", value:60, color:"Info"},
-        {label: "React", value:50, color:"Success"},
+        {label: "Illustrator", value:90, color:"Danger"},
+        {label: "Photoshop", value:90, color:"Primary"},
+        {label: "HTML / CSS", value:70, color:"Warning"},
+        {label: "MySQL", value:60, color:"Info"},
+        {label: "PHP", value:50, color:"Success"},
     ];
 
     return (

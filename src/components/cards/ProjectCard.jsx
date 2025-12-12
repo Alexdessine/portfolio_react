@@ -7,7 +7,7 @@ function ProjectBlock({title, image, paragraph, realize, link}) {
             <div class="card-body text-center">
                 <h5 class="card-title fs-3 fw-bold">{title}</h5>
                 <p class="card-text fs-6">{paragraph}</p>
-                <a href={`${link}`} className="btn btn-primary">Voir le site</a>
+                <a href={`${link}`} className="btn btn-primary" target="_blank">Voir le site</a>
             </div>
             <div class="card-body bg-light border-top text-center">
                 <small className="fs-6 fw-lighter">{realize}</small>
