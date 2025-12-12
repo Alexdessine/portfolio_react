@@ -34,11 +34,11 @@ function Home() {
     };
 
     const skillsData = [
-        {label: "HTML", value:90, color:"Danger"},
-        {label: "CSS", value:80, color:"Primary"},
-        {label: "JavaScript", value:70, color:"Warning"},
-        {label: "PHP", value:60, color:"Info"},
-        {label: "React", value:50, color:"Success"},
+        {label: "Illustrator", value:90, color:"Danger"},
+        {label: "Photoshop", value:90, color:"Primary"},
+        {label: "HTML / CSS", value:70, color:"Warning"},
+        {label: "MySQL", value:60, color:"Info"},
+        {label: "PHP", value:50, color:"Success"},
     ];
 
     return (
