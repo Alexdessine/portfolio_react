@@ -1,9 +1,8 @@
 import React from "react";
 
-function GithubModal({ data }) {
-    if (!data) {
-        return null;
-    }
+function GithubModal({ show, onClose, data }) {
+    if (!show) return null;
+    if (!data) return null;
 
     return (
         <>
@@ -13,7 +12,7 @@ function GithubModal({ data }) {
                     <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="modal-title fs-5" id="staticBackdropLabel">Profil Github</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={onClose}></button>
                         </div>
                         <div className="modal-body">
                             <div className="container-fluid">
@@ -47,6 +46,9 @@ function GithubModal({ data }) {
                     </div>
                 </div>
             </div>
+
+            {/* Backdrop */}
+            <div className="modal-backdrop fade show" onClick={onClose}></div>
         </>
     );
 }
